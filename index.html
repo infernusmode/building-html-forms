@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <title>Building HTML Forms</title>
+    </head>
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select name="user_role_name" id="role">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favourite programming language</p>
+                    <input type="radio" id="HTML" name="fav_language" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="radio" name="fav_language" id="css" value="css">
+                    <label for="css">CSS</label>
+
+                    <input type="radio" name="fav_language" id="js" value="js">
+                    <label for="js">JavaScript</label>
+                </div>
+
+                <div>
+                    <textarea name="sign_up" id="" cols="30" rows="10"></textarea>
+                    <input type="checkbox" name="checkbox" id="newslatter">
+                    <label for="newslatter">Sign up for newsletter</label>
+
+                    <input type="checkbox" name="checkbox" id="terms_condition">
+                    <label for="terms_condition">Agree to terms and conditions</label>
+
+                    <input type="submit" name="submit" id="submit">
+                    <label for="submit">Submit</label>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
